@@ -14,6 +14,6 @@ I hope you enjoy the game!
 
 ---
 
-# License & Copyright
+## License & Copyright
 
 © Joshua Dierickse, Waterloo Collegiate Institute
