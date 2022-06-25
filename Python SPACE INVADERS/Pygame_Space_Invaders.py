@@ -216,16 +216,16 @@ window_height = 500
 display.set_caption("Space Invaders")
 window = display.set_mode((window_width,window_height))
 
-powerup_heart = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_heart.png",450,200,100,0,0,"")
-powerup_blast = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_blast.png",450,200,100,0,0,"")
-powerup_tech = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_tech.png",450,200,100,0,0,"")
-powerup_battery = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_battery.png",150,200,100,0,0,"")
-powerup_reload = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_reload.png",150,200,100,0,0,"")
-powerup_speedup = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_speedup.png",150,200,100,0,0,"")
-powerup_spike = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_spike.png",150,200,100,0,0,"")
-powerup_wings = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_wings.png",150,200,100,0,0,"")
-powerup_weight = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_weight.png",350,200,100,0,0,"")
-powerup_eye = GameSprite("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/power_up_icons_eye.png",150,200,100,0,0,"")
+powerup_heart = GameSprite("Python SPACE INVADERS/power_up_icons_heart.png",450,200,100,0,0,"")
+powerup_blast = GameSprite("Python SPACE INVADERS/power_up_icons_blast.png",450,200,100,0,0,"")
+powerup_tech = GameSprite("Python SPACE INVADERS/power_up_icons_tech.png",450,200,100,0,0,"")
+powerup_battery = GameSprite("Python SPACE INVADERS/power_up_icons_battery.png",150,200,100,0,0,"")
+powerup_reload = GameSprite("Python SPACE INVADERS/power_up_icons_reload.png",150,200,100,0,0,"")
+powerup_speedup = GameSprite("Python SPACE INVADERS/power_up_icons_speedup.png",150,200,100,0,0,"")
+powerup_spike = GameSprite("Python SPACE INVADERS/power_up_icons_spike.png",150,200,100,0,0,"")
+powerup_wings = GameSprite("Python SPACE INVADERS/power_up_icons_wings.png",150,200,100,0,0,"")
+powerup_weight = GameSprite("Python SPACE INVADERS/power_up_icons_weight.png",350,200,100,0,0,"")
+powerup_eye = GameSprite("Python SPACE INVADERS/power_up_icons_eye.png",150,200,100,0,0,"")
 
 powerup_text = Phrase(255,255,255,"C:/Users/joshu/AppData/Local/Microsoft/Windows/INetCache/IE/9EP3SYSI/Authentic_Script_Rough[1].ttf","Power Up Options",140,50,75)
 powerup_text1 = Phrase(0,0,0,"C:/Users/joshu/AppData/Local/Microsoft/Windows/INetCache/IE/9EP3SYSI/Authentic_Script_Rough[1].ttf","Piercing",120,310,50)
@@ -269,19 +269,19 @@ text4 = Phrase(255,255,255,"C:/Users/joshu/AppData/Local/Microsoft/Windows/INetC
 text6 = Phrase(255,255,255,"C:/Users/joshu/AppData/Local/Microsoft/Windows/INetCache/IE/9EP3SYSI/Authentic_Script_Rough[1].ttf","Press Space To Play",50,350,90)
 
 
-big_player = Player("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/spaceinvadersship.png",450,250,200,10,50," ")
-player_flip = Player("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/spaceinvadersship_flip1.png",50,160,100,10,100," ")
+big_player = Player("Python SPACE INVADERS/spaceinvadersship.png",450,250,200,10,50," ")
+player_flip = Player("Python SPACE INVADERS/spaceinvadersship_flip1.png",50,160,100,10,100," ")
 
-background1 = Background("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/space_background.png",0,0,700,500)
+background1 = Background("Python SPACE INVADERS/space_background.png",0,0,700,500)
 
 badguy_list = []
 for i in range(10):
-    badguy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/pink_dude-png.png",i*40 + 300,160,25,4,100,"left"))
-    badguy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/orange_dude-png.png",i*40 + 300,185,25,4,100,"right"))
-    badguy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/red_dude-png.png",i*40 + 300,210,25,4,100,"left"))
-    badguy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/green_dude-png.png",i*40 + 300,235,25,4,100,"right"))
+    badguy_list.append(Enemy("Python SPACE INVADERS/pink_dude-png.png",i*40 + 300,160,25,4,100,"left"))
+    badguy_list.append(Enemy("Python SPACE INVADERS/orange_dude-png.png",i*40 + 300,185,25,4,100,"right"))
+    badguy_list.append(Enemy("Python SPACE INVADERS/red_dude-png.png",i*40 + 300,210,25,4,100,"left"))
+    badguy_list.append(Enemy("Python SPACE INVADERS/green_dude-png.png",i*40 + 300,235,25,4,100,"right"))
 
-big_badguy = Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/orange_dude-png.png",450,250,200,4,100,"right")
+big_badguy = Enemy("Python SPACE INVADERS/orange_dude-png.png",450,250,200,4,100,"right")
 
 power_option = 1
 game_score = 0
@@ -289,26 +289,28 @@ level = 1
 extra_health = 0
 regeneration = 0
 
+
 background1.create_background()
 text1.draw_text()
 text2.draw_text()
 big_player.reset()
 display.update()
-time.delay(3000)
+time.delay(1000)
 
 background1.create_background()
 text3.draw_text()
 text4.draw_text()
 big_badguy.reset()
 display.update()
-time.delay(3000)
+time.delay(1000)
+
 
 in_game = False
 
 gameloop = True
 while gameloop == True:
 
-    player = Player("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/spaceinvadersship.png",325,420,50,10,1000 + extra_health," ")
+    player = Player("Python SPACE INVADERS/spaceinvadersship.png",325,420,50,10,1000 + extra_health," ")
 
     bullet_list = []
 
@@ -317,33 +319,33 @@ while gameloop == True:
     enemy_list = []
     for i in range(17):
         if level >= 1:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/pink_dude-png.png",i*40,10,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/pink_dude-png.png",i*40,10,25,8,100,"left"))
         if level >= 2:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/orange_dude-png.png",i*40 + 25,35,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/orange_dude-png.png",i*40 + 25,35,25,8,100,"right"))
         if level >= 3:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/red_dude-png.png",i*40,60,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/red_dude-png.png",i*40,60,25,8,100,"left"))
         if level >= 4:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/green_dude-png.png",i*40 + 25,85,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/green_dude-png.png",i*40 + 25,85,25,8,100,"right"))
         if level >= 5:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/purple_dude-png.png",i*40,110,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/purple_dude-png.png",i*40,110,25,8,100,"left"))
         if level >= 6:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/light_blue_dude-png.png",i*40 + 25,135,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/light_blue_dude-png.png",i*40 + 25,135,25,8,100,"right"))
         if level >= 7:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/yellow_dude-png.png",i*40,160,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/yellow_dude-png.png",i*40,160,25,8,100,"left"))
         if level >= 8:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/orange_dude-png.png",i*40,10,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/orange_dude-png.png",i*40,10,25,8,100,"left"))
         if level >= 9:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/red_dude-png.png",i*40 + 25,35,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/red_dude-png.png",i*40 + 25,35,25,8,100,"right"))
         if level >= 10:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/green_dude-png.png",i*40,60,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/green_dude-png.png",i*40,60,25,8,100,"left"))
         if level >= 11:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/purple_dude-png.png",i*40 + 25,85,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/purple_dude-png.png",i*40 + 25,85,25,8,100,"right"))
         if level >= 12:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/light_blue_dude-png.png",i*40,110,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/light_blue_dude-png.png",i*40,110,25,8,100,"left"))
         if level >= 13:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/yellow_dude-png.png",i*40 + 25,135,25,8,100,"right"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/yellow_dude-png.png",i*40 + 25,135,25,8,100,"right"))
         if level >= 14:
-            enemy_list.append(Enemy("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/pink_dude-png.png",i*40,160,25,8,100,"left"))
+            enemy_list.append(Enemy("Python SPACE INVADERS/pink_dude-png.png",i*40,160,25,8,100,"left"))
 
     time1 = 0
     time2 = 0
@@ -392,13 +394,13 @@ while gameloop == True:
             keys = key.get_pressed()
             if keys[K_SPACE] and time.get_ticks() >= time1:
                 for i in range(number_bullets):
-                    bullet_list.append(Bullet("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/green_lazer-png.png",player.rect.x - number_bullets * 5 + 10 * i + 7,player.rect.y + 10,5,10,20,bullet_health,500))
+                    bullet_list.append(Bullet("Python SPACE INVADERS/green_lazer-png.png",player.rect.x - number_bullets * 5 + 10 * i + 7,player.rect.y + 10,5,10,20,bullet_health,500))
                 time1 = time.get_ticks() + bullet_list[0].fire_delay
         
 
         if time.get_ticks() >= time2:
             random_number = random.randrange(0,(len(enemy_list)))
-            enemy_bullet_list.append(Bullet("C:/Users/joshu/Downloads/Python Stuff/Python SPACE INVADERS/red_lazar-png.png",enemy_list[random_number].rect.x,enemy_list[random_number].rect.y,10,20,20,5,500))
+            enemy_bullet_list.append(Bullet("Python SPACE INVADERS/red_lazar-png.png",enemy_list[random_number].rect.x,enemy_list[random_number].rect.y,10,20,20,5,500))
             time2 = time.get_ticks() + 2000 - len(enemy_list) * 10
 
         counter = 0
