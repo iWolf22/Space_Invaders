@@ -2,7 +2,7 @@
 
 This is a space invaders game I made when I was younger, just thought I would upload it to github, if anyone would like to check it out!
 
-Note, if you are trying to download and run the game, your going to need to install python and pygame and your going to have to run "Pygame_Space_Invaders.py"
+Note, if you are trying to download and run the game, your going to need to install python and pygame then your going to have to run "Pygame_Space_Invaders.py"
 
 I hope you enjoy the game!
 
